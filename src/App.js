@@ -11,7 +11,6 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-    {/* <Route  path="/home" component={About} /> */}
       <Routes />
     </BrowserRouter>
   );

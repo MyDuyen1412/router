@@ -2,7 +2,7 @@
   position: relative;
   height: 100%;
 }
-.animation-route .animation-route__container {
+.animation-route .animation-route__cur {
   position: absolute;
   top: 0;
   left: 0;
@@ -11,17 +11,74 @@
   /* transform: translateX(-100%); */
   /* transform: translateX(100%); */
 
-  /* opacity: 0; */
+  /* opacity: 0;
 
-  transform: scale(0);
+  transform: scale(0); */
 
-  transition: all 0.3s ease-in-out ;
+  /* transition: all 0.5s ease-in-out; */
 }
-.animation-route .animation-route__container.animation {
+
+
+/* slide to left.css */
+.animation-route .animation-route__slideToLeft {
+  transform: translateX(100%);
+}
+
+.animation-route .animation-route__slideToLeft.animation-cur {
+  transform: translateX(0);
+}
+
+.animation-route .animation-route__slideToRight {
+  transform: translateX(-100%);
+}
+
+.animation-route .animation-route__slideToRight.animation-cur {
+  transform: translateX(0);
+}
+
+.animation-route .animation-route__slideToTop {
+  transform: translateY(100%);
+}
+
+.animation-route .animation-route__slideToTop.animation-cur {
+  transform: translateY(0);
+}
+
+.animation-route .animation-route__slideToBottom {
+  transform: translateY(-100%);
+}
+
+.animation-route .animation-route__slideToBottom.animation-cur {
+  transform: translateY(0);
+}
+
+.animation-route .animation-route__cur.animation-cur {
   /* transform: translateX(0); */
+
+  /* opacity: 1;
+
+  transform: scale(1); */
+
+}
+
+
+
+
+.animation-route .animation-route__prev {
+  /* transform: translateX(0); */
+  /* transform: translateX(100%); */
 
   /* opacity: 1; */
 
-  transform: scale(1);
+  /* transform: scale(1); */
+
+  /* transition: all 0.5s ease-in-out ; */
+}
+.animation-route .animation-route__prev.animation-prev {
+  /* transform: translateX(-100%); */
+
+  /* opacity: 0; */
+
+  /* transform: scale(0); */
 
 }
